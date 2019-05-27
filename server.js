@@ -5,17 +5,17 @@ const app=express();
 app.use(bodyParser.json())
 app.use(cors());
 var knex = require('knex');
-const db=knex({
-  client: 'pg',
-  connection: {
-    host : '127.0.0.1',
-    user : 'postgres',
-    password : '872664',
-    database : 'smart-brain'
-  }
-});
-db.select('*').from('users').then((data)=>
-	console.log(data));
+// const db=knex({
+//   client: 'pg',
+//   connection: {
+//     host : '127.0.0.1',
+//     user : 'postgres',
+//     password : '872664',
+//     database : 'smart-brain'
+//   }
+// });
+// db.select('*').from('users').then((data)=>
+// 	console.log(data));
 const database={
 	users:[
 	    {
